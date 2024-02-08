@@ -37,14 +37,23 @@ body {
 
 header ul {
 	display: flex;
-    gap: 15px;
+    gap: 25px;
+    line-height: 25px;
 }
 
 header .row {
 	justify-content: space-between;
-    padding: 20px
+    padding: 20px;
+    align-items: center;
 }
 
+/*COMPONENTS*/
+
+.button {
+	background-color: #0061FF;
+    color: white;
+    padding: 5px 15px;
+}
 
 
 /*DEBUG*/
