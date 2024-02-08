@@ -30,10 +30,25 @@ body {
     margin: 0 auto;
 }
 
+.container {
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
 .row {
 	display: flex;
     flex-wrap: wrap;
 }
+
+.col-40 {
+	width: 40%;
+}
+
+.col-60 {
+	width: 60%;
+}
+
+/*HEADER*/
 
 header ul {
 	display: flex;
@@ -47,17 +62,50 @@ header .row {
     align-items: center;
 }
 
+/*JUMBO*/
+
+.jumbotron {
+	background-color: #B4D0E7;
+    padding: 50px 10px 0
+}
+
+.jumbo-title {
+	font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .col-40 {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+	font-size: 50px;
+}
+
+.col-40 .button {
+    padding: 10px 15px;
+	margin: 20px 0;
+}
+
+
 /*COMPONENTS*/
 
 .button {
 	background-color: #0061FF;
     color: white;
     padding: 5px 15px;
+    display: inline-block;
 }
 
 
 /*DEBUG*/
 
-.container-lg {
+.debug .container-lg {
+    border: 1px solid black;
+}
+
+.debug .col-40, .debug .col-60 {
     border: 1px solid black;
 }
