@@ -35,6 +35,11 @@ body {
     margin: 0 auto;
 }
 
+.container-sm {
+	max-width: 1000px;
+    margin: 0 auto;
+}
+
 .row {
 	display: flex;
     flex-wrap: wrap;
@@ -47,6 +52,16 @@ body {
 .col-60 {
 	width: 60%;
 }
+
+.col-33 {
+	width: calc(4 * 100% / 12);
+}
+
+.col-100 {
+	width: 100%;
+}
+
+
 
 /*HEADER*/
 
@@ -66,7 +81,8 @@ header .row {
 
 .jumbotron {
 	background-color: #B4D0E7;
-    padding: 50px 10px 0
+    padding-top: 50px;
+    padding-bottom: 15px;
 }
 
 .jumbo-title {
@@ -85,8 +101,14 @@ header .row {
 }
 
 .col-40 .button {
-    padding: 10px 15px;
 	margin: 20px 0;
+}
+
+/*SECTION - BUSINESS PLANS*/
+
+.business-plans ul {
+	display: flex;
+    gap: 25px;
 }
 
 
@@ -99,6 +121,10 @@ header .row {
     display: inline-block;
 }
 
+.button.button-large {
+    padding: 10px 15px;
+}
+
 
 /*DEBUG*/
 
@@ -106,6 +132,32 @@ header .row {
     border: 1px solid black;
 }
 
-.debug .col-40, .debug .col-60 {
+.debug .container-sm {
     border: 1px solid black;
+}
+
+.debug .col-40, 
+.debug .col-60,
+.debug .col-33 {
+    border: 1px solid rgb(195, 195, 195);
+    min-height: 500px;
+}
+
+.debug .col-100 {
+    border: 1px solid rgb(195, 195, 195);
+    min-height: 100px;
+
+}
+
+.plan-card {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.col-33 .plan-card {
+    min-height: 500px;
+}
+
+.col-100 .plan-card {
+    min-height: 200px;
 }
