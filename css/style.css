@@ -22,3 +22,33 @@ ul, ol, menu {
 body {
 	font-family: 'Open Sans';
 }
+
+/*LAYOUT*/
+
+.container-lg {
+	max-width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+header ul {
+	display: flex;
+    gap: 15px;
+}
+
+header .row {
+	justify-content: space-between;
+    padding: 20px
+}
+
+
+
+/*DEBUG*/
+
+.container-lg {
+    border: 1px solid black;
+}
