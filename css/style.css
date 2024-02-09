@@ -138,6 +138,10 @@ body {
 	padding: 20px
 }
 
+.plan-card {
+    height: 100%;
+}
+
 .card-header {
     padding: 7px;
     text-align: center
@@ -145,7 +149,6 @@ body {
 
 .card-body {
     padding: 25px 20px;
-    min-height: 100%;
 }
 
 .card-header, .card-body {
@@ -163,10 +166,16 @@ body {
     gap: 15px;
 }
 
-.card-body .button {
+.col-4 .card-body .button {
     min-width:100%;
     margin: 20px 0;
 }
+
+hr {
+    color: #B4D0E7;
+    width: 10%;
+}
+
 
 /*COMPONENTS*/
 
@@ -185,6 +194,24 @@ body {
 .link-deco {
     color: blue;
     text-decoration: underline;
+}
+
+.color-blue {
+    color: #0061FF;
+}
+
+.margin-40-0 {
+    margin: 40px 0;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.margin-top-auto {
+    margin-top: 30px;
 }
 
 /*DEBUG*/
@@ -208,13 +235,4 @@ body {
     border: 1px solid rgb(195, 195, 195);
     min-height: 100px;
 
-}
-
-
-.col-4 .plan-card {
-    min-height: 500px;
-}
-
-.col-100 .plan-card {
-    min-height: 200px;
 }
