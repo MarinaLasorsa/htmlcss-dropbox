@@ -28,6 +28,7 @@ body {
 .container-lg {
 	max-width: 100%;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .container {
@@ -45,16 +46,12 @@ body {
     flex-wrap: wrap;
 }
 
-.col-40 {
-	width: 40%;
-}
-
-.col-60 {
-	width: 60%;
-}
-
-.col-33 {
+.col-4 {
 	width: calc(4 * 100% / 12);
+}
+
+.col-8 {
+	width: calc(8 * 100% / 12);
 }
 
 .col-100 {
@@ -65,16 +62,30 @@ body {
 
 /*HEADER*/
 
-header ul {
-	display: flex;
-    gap: 25px;
-    line-height: 25px;
+.page-header {
+	background-color: white;
 }
 
-header .row {
+.nav {
 	justify-content: space-between;
-    padding: 20px;
+    min-height: 70px;
     align-items: center;
+}
+
+.nav .logo {
+	display: block;
+}
+
+.page-header-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-header-menu li > a:not(.logo) {
+    display: block;
+    line-height: 34px;
+    padding: 0 20px;
 }
 
 /*JUMBO*/
@@ -90,41 +101,91 @@ header .row {
     margin-bottom: 30px;
 }
 
-.jumbotron .col-40 {
+.jumbo-content {
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    
 }
 
 .arrow-icon {
 	font-size: 50px;
+    margin-top: auto;
 }
 
-.col-40 .button {
-	margin: 20px 0;
-}
 
 /*SECTION - BUSINESS PLANS*/
 
-.business-plans ul {
-	display: flex;
-    gap: 25px;
+.business-plans {
+	padding: 50px 0
 }
 
+.section-title {
+	font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px; 
+}
+
+.invoice-plan-menu {
+	display: flex;
+    gap: 25px;
+    margin: 20px 0
+}
+
+.business-plans .col-4, 
+.business-plans .col-100 {
+	padding: 20px
+}
+
+.card-header {
+    padding: 7px;
+    text-align: center
+}
+
+.card-body {
+    padding: 25px 20px;
+    min-height: 100%;
+}
+
+.card-header, .card-body {
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+.card-menu {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-body .button {
+    min-width:100%;
+    margin: 20px 0;
+}
 
 /*COMPONENTS*/
 
 .button {
 	background-color: #0061FF;
     color: white;
-    padding: 5px 15px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
     display: inline-block;
+    text-align: center;
 }
 
-.button.button-large {
-    padding: 10px 15px;
-}
+/*UTILITIES*/
 
+.link-deco {
+    color: blue;
+    text-decoration: underline;
+}
 
 /*DEBUG*/
 
@@ -149,12 +210,8 @@ header .row {
 
 }
 
-.plan-card {
-    border: 1px solid rgb(0, 0, 0);
-    margin: 20px;
-}
 
-.col-33 .plan-card {
+.col-4 .plan-card {
     min-height: 500px;
 }
 

@@ -9,53 +9,52 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-    <script src="https://kit.fontawesome.com/5e4eaeffdb.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5e4eaeffdb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <div class="container-lg">
-            <div class="row">
-                <ul>
-                    <li><img src="./img/logo-small.png"></li>
+            <nav class="row nav">
+                <ul class="page-header-menu">
+                    <li><a class="logo" href="#"><img src="./img/logo-small.png"></a></li>
                     <li>Perchè Dropbox</li>
                     <li>Funzioni</li>
                     <li>Piani e Prezzi</li>
                 </ul>
-                <ul>
+                <ul class="page-header-menu">
                     <li>Supporto</li>
                     <li>Contatta l'ufficio vendite</li>
                     <li>Accedi</li>
                     <li><a class="button" href="#">Inizia</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
+        <!--START JUMBOTRON-->
         <section class="jumbotron">
             <div class="container">
                 <h1 class="jumbo-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-40">
-                        <div>
-                            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                            <a class="button button-large" href="#">Inizia la tua prova gratuita</a>
-                            <p>Annulla in qualsiasi momento</p>
-                        </div>
-                        
+                    <div class="col-4 jumbo-content">
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                        <a class="button button-large" href="#">Inizia la tua prova gratuita</a>
+                        <p>Annulla in qualsiasi momento</p>
                         <i class="arrow-icon fa-solid fa-arrow-down"></i>
                     </div>
-                    <div class="col-60">
+                    <div class="col-8 jumbo-thumbnail">
                         <img src="./img/jumbo.png">
                     </div>
                 </div>
             </div>
         </section>
+        <!--END JUMBOTRON-->
         <section class="business-plans">
             <div class="container-sm">
-                <h1>Titolo</h1>
-                <ul>
+                <h1 class="section-title">Trova il piano business che fa per te</h1>
+                <ul class="invoice-plan-menu">
                     <li> 
                         <input type="radio" id="monthlyInvoice" name="invoiceplan" value="monthly"/>
                         <label for="monthlyInvoice">Fatturazione mensile</label>
@@ -65,29 +64,69 @@
                         <label for="monthlyInvoice">Fatturazione annuale</label>
                     </li>
                 </ul>
-                <div class="row">
-                    <div class="col-33">
+                <ul class="row">
+                    <li class="col-4">
                         <div class="plan-card">
-                            card
+                            <div class="card-header">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Singolo</span>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <h3 class="card-title">Professional</h3>
+                                    <p><strong>&euro; 12.00</strong></p>
+                                    <p>/mese</p>
+                                </div>
+                                <ul class="card-menu">
+                                    <li><i class="fa-solid fa-user"></i> 1 utente</li>
+                                    <li><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</li>
+                                    <li><i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                </ul>
+                                <div>
+                                    <a class="button" href="#">Prova gratis per 30 giorni</a>
+                                    <p>oppure <spam class="link-deco">acquista ora</spam></p>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <h4><strong>Punti salienti del piano</strong></h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Transfert</li>
+                                        <li><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-33">
+                    </li>
+                    <li class="col-4">
                         <div class="plan-card">
-                            card
+                            <div class="card-header">
+                            
+                            </div>
+                            <div class="card-body">
+                                
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-33">
+                    </li>
+                    <li class="col-4">
                         <div class="plan-card">
-                            card
+                            <div class="card-header">
+                                
+                            </div>
+                            <div class="card-body">
+                                
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-100">
+                    </li>
+                    <li class="col-100">
                         <div class="plan-card">
-                            card
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                
+                            </div>
                         </div>
-                    </div>
+                    </li>
                 </div>
             </div>
         </section>
