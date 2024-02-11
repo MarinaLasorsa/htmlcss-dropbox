@@ -124,7 +124,7 @@ body {
 .section-title {
 	font-size: 30px;
     display: inline-block;
-    margin-bottom: 20px; 
+    margin-bottom: 30px; 
 }
 
 .invoice-plan-menu {
@@ -142,16 +142,16 @@ body {
     height: 100%;
 }
 
-.card-header {
+.business-plans .card-header {
     padding: 7px;
     text-align: center
 }
 
-.card-body {
+.business-plans .card-body {
     padding: 25px 20px;
 }
 
-.card-header, .card-body {
+.business-plans .card-header, .business-plans .card-body {
     border: 1px solid rgb(172, 172, 172);
 }
 
@@ -195,6 +195,19 @@ hr {
     margin-bottom: 30px
 }
 
+/*SECTION - BUSINESS FEATURES*/
+
+.business-features {
+    padding: 50px 0;
+}
+
+.business-features p {
+    margin-top: 20px;
+}
+
+.business-features .col-4 {
+	padding: 20px
+}
 
 /*COMPONENTS*/
 
@@ -249,10 +262,9 @@ hr {
     border: 1px solid black;
 }
 
-.debug .col-40, 
-.debug .col-60,
-.debug .col-33 {
-    border: 1px solid rgb(195, 195, 195);
+.debug .col-4, 
+.debug .col-8 {
+    border: 1px solid rgb(102, 102, 102);
     min-height: 500px;
 }
 
