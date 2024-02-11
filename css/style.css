@@ -209,6 +209,16 @@ hr {
 	padding: 20px
 }
 
+/*SECTION - CLIENTS LINK*/
+
+.clients-link {
+    padding: 70px 0;
+}
+
+.clients-link p {
+    margin-top: 30px;
+}
+
 /*COMPONENTS*/
 
 .button {
