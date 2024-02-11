@@ -176,6 +176,25 @@ hr {
     width: 10%;
 }
 
+/*SECTION - PARTNER*/
+
+.partner {
+    padding: 30px 0;
+}
+
+.partner img {
+    padding-right: 50px;
+}
+
+.partner .col-4 {
+    padding-top: 40px;
+}
+
+.partner p {
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+
 
 /*COMPONENTS*/
 
@@ -187,6 +206,12 @@ hr {
     padding: 0 20px;
     display: inline-block;
     text-align: center;
+}
+
+.button.button-white {
+	background-color: white;
+    color: black;
+    border: 1px solid black
 }
 
 /*UTILITIES*/
