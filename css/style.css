@@ -278,6 +278,25 @@ body {
     padding-top: 15px;
 }
 
+/*SECTION - FAQ*/
+
+.faq-section {
+    padding: 90px 0;
+}
+
+.faq-section .section-title {
+    margin-bottom: 50px;
+}
+
+.faq-section li {
+    font-weight: bold;
+    padding: 30px 0;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    display: flex;
+    justify-content: space-between;
+}
+
 /*COMPONENTS*/
 
 .button {
