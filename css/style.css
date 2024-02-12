@@ -28,7 +28,6 @@ body {
 .container-lg {
 	max-width: 100%;
     margin: 0 auto;
-    padding: 0 12px;
 }
 
 .container {
@@ -58,12 +57,15 @@ body {
 	width: 100%;
 }
 
-
+.col-6 {
+	width: calc(6 * 100% / 12);
+}
 
 /*HEADER*/
 
 .page-header {
 	background-color: white;
+    padding: 0 12px;
 }
 
 .nav {
@@ -133,8 +135,6 @@ body {
     margin: 20px 0
 }
 
-
-
 .card.plan {
     border: 1px solid rgb(172, 172, 172);
     height: 100%;
@@ -183,7 +183,7 @@ body {
     margin: 20px 0;
 }
 
-hr {
+.business-plans hr {
     color: #B4D0E7;
     width: 10%;
 }
@@ -237,6 +237,36 @@ hr {
     margin-top: 30px;
 }
 
+/*SECTION - CLIENTS LOGOS*/
+
+.clients-section .col-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-section .col-6 {
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.col-4.background-grey {
+    padding: 50px;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.col-4.background-grey .client-logo::after {
+	content: '';
+	width: 100px;
+	height: 1px;
+	background-color: #bcbcbc;
+	display: block;
+    margin-top: 30px;
+}
+
 /*COMPONENTS*/
 
 .button {
@@ -278,6 +308,10 @@ hr {
 
 .margin-top-auto {
     margin-top: 30px;
+}
+
+.background-grey {
+    background-color: #F5F5F5;
 }
 
 /*DEBUG*/
