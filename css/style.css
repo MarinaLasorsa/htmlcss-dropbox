@@ -124,7 +124,7 @@ body {
 }
 
 .section-title {
-	font-size: 30px;
+	font-size: 40px;
     display: inline-block;
     margin-bottom: 30px; 
 }
@@ -267,6 +267,17 @@ body {
     margin-top: 30px;
 }
 
+/*SECTION - FREE TRIAL*/
+
+.free-trial {
+    padding: 90px 0;
+    background-color: #B4D0E7;
+}
+
+.free-trial .col-4 {
+    padding-top: 15px;
+}
+
 /*COMPONENTS*/
 
 .button {
@@ -279,10 +290,15 @@ body {
     text-align: center;
 }
 
-.button.button-white {
-	background-color: white;
-    color: black;
+.button.button-clear {
+    background-color: white;
+	color: black;
     border: 1px solid black
+}
+
+.button.button-white {
+    background-color: white;
+    color: black;
 }
 
 /*UTILITIES*/
@@ -313,6 +329,11 @@ body {
 .background-grey {
     background-color: #F5F5F5;
 }
+
+.color-burgundy {
+    color: #61082B;
+}
+
 
 /*DEBUG*/
 
