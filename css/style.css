@@ -297,6 +297,37 @@ body {
     justify-content: space-between;
 }
 
+/*FOOTER*/
+
+.page-footer {
+    background-color: black;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.page-footer .row {
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.page-footer .card-title {
+    margin-bottom: 20px;
+}
+
+.page-footer li {
+    line-height: 30px;
+}
+
+.page-footer form::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-bottom: 30px;
+}
+
 /*COMPONENTS*/
 
 .button {
