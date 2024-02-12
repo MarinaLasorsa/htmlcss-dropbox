@@ -118,7 +118,7 @@ body {
 /*SECTION - BUSINESS PLANS*/
 
 .business-plans {
-	padding: 50px 0
+	padding: 100px 0
 }
 
 .section-title {
@@ -133,37 +133,49 @@ body {
     margin: 20px 0
 }
 
-.business-plans .col-4, 
-.business-plans .col-100 {
-	padding: 20px
-}
 
-.plan-card {
+
+.card.plan {
+    border: 1px solid rgb(172, 172, 172);
     height: 100%;
 }
 
-.business-plans .card-header {
-    padding: 7px;
-    text-align: center
+.business-plans .row {
+    row-gap: 50px;
 }
 
-.business-plans .card-body {
-    padding: 25px 20px;
+.business-plans .row > * {
+	padding: 0 25px;
 }
 
-.business-plans .card-header, .business-plans .card-body {
-    border: 1px solid rgb(172, 172, 172);
+.card.plan .card-header,
+.card.plan .card-body {
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.card.plan .card-header {
+    text-align: center;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    line-height: 40px;
+}
+
+.card.plan .card-body {
+    padding-top: 32px;
+	padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .card-title {
     font-size: 25px;
 }
 
-.card-menu {
-    margin: 30px 0;
+.card.plan .card-menu {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .col-4 .card-body .button {
@@ -174,6 +186,12 @@ body {
 hr {
     color: #B4D0E7;
     width: 10%;
+}
+
+.card.plan .card-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /*SECTION - PARTNER*/
